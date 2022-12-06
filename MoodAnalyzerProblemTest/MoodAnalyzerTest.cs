@@ -32,6 +32,7 @@ namespace MoodAnalyzerProblemTest
                 Assert.AreEqual(ex.Message, "Mood is null");
             }
         }
+        [Test]
         public void GivenEmptyMood_WhenAnalyze_ShouldReturnHappy()
         {
             try
@@ -41,7 +42,7 @@ namespace MoodAnalyzerProblemTest
             }
             catch (MoodAnalyzerException ex)
             {
-                Assert.AreEqual(ex.Message, "Mood is Empty");
+                Assert.AreEqual(ex.Message, "Mood is null");
             }
         }
     }
